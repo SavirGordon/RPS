@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-hj-5vT">
-                                <rect key="frame" x="167" y="284" width="59" height="30"/>
+                                <rect key="frame" x="71" y="284" width="249" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -71,7 +71,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="ComputerMove" destination="8bC-Xf-vdC" id="M0a-Jk-UUU"/>
                         <outlet property="ComputerSign" destination="ABK-rw-XzU" id="bab-PM-MAm"/>
                         <outlet property="GameStatus" destination="HSs-hj-5vT" id="7Kc-Ut-TDa"/>
                         <outlet property="PlayAgain" destination="PBr-3Y-bDd" id="ngr-MW-J1Y"/>
