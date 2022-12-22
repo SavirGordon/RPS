@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         }
         else {
             view.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
-            GameStatus.text = "You Drawed"
+            GameStatus.text = "You tied"
             PlayAgain.isHidden = false
         }
     }

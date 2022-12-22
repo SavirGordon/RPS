@@ -16,59 +16,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-rw-XzU">
-                                <rect key="frame" x="99" y="135" width="194" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-hj-5vT">
-                                <rect key="frame" x="71" y="284" width="249" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBr-3Y-bDd">
-                                <rect key="frame" x="145" y="550" width="103" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBr-3Y-bDd">
+                                <rect key="frame" x="145.33333333333334" y="551.33333333333337" width="102.66666666666666" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PRj-Wp-NT9"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play Again"/>
                                 <connections>
                                     <action selector="paButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAa-cT-7bk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-IW-vHC">
-                                <rect key="frame" x="173" y="409" width="47" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="🖐"/>
-                                <connections>
-                                    <action selector="UsersPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWP-Gz-Vhm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mp-TQ-DMu">
-                                <rect key="frame" x="299" y="409" width="47" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="✌️"/>
-                                <connections>
-                                    <action selector="UsersScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="208-XY-6MZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-Nt-B9P">
-                                <rect key="frame" x="47" y="409" width="47" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="✊"/>
-                                <connections>
-                                    <action selector="UsersRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggw-UZ-ce6"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="Nfr-Ea-3DB">
+                                <rect key="frame" x="47" y="407" width="299" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-Nt-B9P">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="✊"/>
+                                        <connections>
+                                            <action selector="UsersRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggw-UZ-ce6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-IW-vHC">
+                                        <rect key="frame" x="126" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="🖐"/>
+                                        <connections>
+                                            <action selector="UsersPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWP-Gz-Vhm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mp-TQ-DMu">
+                                        <rect key="frame" x="252" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="✌️"/>
+                                        <connections>
+                                            <action selector="UsersScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="208-XY-6MZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="5gM-JC-1Jl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34.329999999999998" id="YyB-EP-FnZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="O9m-vd-vUq">
+                                <rect key="frame" x="96" y="137" width="200" height="143"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-rw-XzU">
+                                        <rect key="frame" x="41.666666666666664" y="0.0" width="116.66666666666669" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-hj-5vT">
+                                        <rect key="frame" x="70.333333333333329" y="113" width="58.999999999999986" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sy4-Fh-iaz"/>
+                                    <constraint firstAttribute="width" constant="200" id="umr-iY-tJM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O9m-vd-vUq" firstAttribute="centerX" secondItem="Nfr-Ea-3DB" secondAttribute="centerX" id="4Da-9g-AGm"/>
+                            <constraint firstItem="Nfr-Ea-3DB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="407" id="IbK-1c-c07"/>
+                            <constraint firstItem="PBr-3Y-bDd" firstAttribute="top" secondItem="Nfr-Ea-3DB" secondAttribute="bottom" constant="110" id="RNt-sI-o7C"/>
+                            <constraint firstItem="PBr-3Y-bDd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VGb-VI-sgc"/>
+                            <constraint firstItem="Nfr-Ea-3DB" firstAttribute="centerX" secondItem="PBr-3Y-bDd" secondAttribute="centerX" id="dk7-2b-HjT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PBr-3Y-bDd" secondAttribute="trailing" id="kMB-so-sqq"/>
+                            <constraint firstItem="Nfr-Ea-3DB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="rVv-dS-8Av"/>
+                            <constraint firstItem="O9m-vd-vUq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="uqo-Q7-gDh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ComputerSign" destination="ABK-rw-XzU" id="bab-PM-MAm"/>
